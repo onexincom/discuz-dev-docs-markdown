@@ -1,4 +1,4 @@
-- ## Discuz! 应用中心
+- ## `Discuz!` 应用中心
 
     - [注册账号](?ac=document&page=faq)
 
@@ -12,25 +12,25 @@
 
     - [官方QQ群](?ac=document&page=qqgroup)
 
-    - [《Discuz! 应用中心盗版认定及处理方法》](?ac=document&page=piracy)
+    - [《`Discuz!` 应用中心盗版认定及处理方法》](?ac=document&page=piracy)
 
-    - [《Discuz! 应用中心应用审核规范》](?ac=document&page=audit)
+    - [《`Discuz!` 应用中心应用审核规范》](?ac=document&page=audit)
 
-    - [《Discuz! 应用中心插件审核规范》](?ac=document&page=audit_plugin)
+    - [《`Discuz!` 应用中心插件审核规范》](?ac=document&page=audit_plugin)
 
 
-- ## Discuz! 的模板机制
+- ## `Discuz!` 的模板机制
 
     - [模板风格创建](?ac=document&page=dev_template)
 
-    - [Discuz! 模板解析语法](?ac=document&page=template_coderule)
+    - [`Discuz!` 模板解析语法](?ac=document&page=template_coderule)
 
     - [模板缓存与CSS缓存](?ac=document&page=template_css)
 
     - [内置常用CSS代码分析 ](?ac=document&page=template_sample)
 
 
-- ## Discuz! 的插件机制
+- ## `Discuz!` 的插件机制
 
     - [准备工作](?ac=document&page=dev_plugin)
 
@@ -54,15 +54,12 @@
 
 - ## 技术文档
 
-    - [Discuz! 的编码规范](?ac=document&page=dev_coderule)
+    - [`Discuz!` 的编码规范](?ac=document&page=dev_coderule)
 
-    - [Discuz! 的模板机制](?ac=document&page=dev_template)
+    - [`Discuz!` 的模板机制](?ac=document&page=dev_template)
 
-    - [Discuz! 的插件机制](?ac=document&page=dev_plugin)
+    - [`Discuz!` 的插件机制](?ac=document&page=dev_plugin)
 
-    - [Discuz! 开发文档交流](https://www.dismall.com/forum-49-1.html)
+    - [`Discuz!` 开发文档交流](https://www.dismall.com/forum-49-1.html)
 
-    - [Discuz! 资料库](https://addon.dismall.com/library/)
-
-
-
+    - [`Discuz!` 资料库](https://addon.dismall.com/library/)
