@@ -1,5 +1,5 @@
 # Discuz!X development docs
-The latest Discoz! X development document, written using markdown. This is unofficially organized. 
+The latest Discuz! X development document, written using markdown. This is unofficially organized. 
 You may need to check the official documentation. https://open.dismall.com/?!document
 
 ## About us
