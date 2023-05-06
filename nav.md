@@ -40,6 +40,8 @@
 
     - [页面嵌入](?ac=document&page=plugin_hook)
 
+    - [插件嵌入点列表](?ac=document&page=plugin_hooklist)
+
     - [特殊主题](?ac=document&page=plugin_specialthread)
 
     - [第三方拓展类](?ac=document&page=plugin_classes)
