@@ -2,7 +2,7 @@
 # 特殊主题
 特殊主题模块用于创建一个特殊主题，特殊主题类型脚本格式
 
-```
+```php
 <?php
 
 class threadplugin_identifier {
