@@ -1,5 +1,5 @@
-# discuz-dev-docs-markdown
-Use markdown to organize the latest Discuz!X development manual version. This is unofficially organized. 
+# Discuz!X development docs
+Use markdown to organize the latest Discuz!X development docs version. This is unofficially organized. 
 You may need to check the official documentation. https://open.dismall.com/?!document
 
 ## About us
