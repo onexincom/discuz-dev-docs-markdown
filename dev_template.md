@@ -48,7 +48,7 @@ $_config['plugindeveloper'] = 1;
 
 
 #### 实例
-1. 在站点根目录 `./template/` 中创建新的目录如 `"./template/*mytest*"`
+1. 在站点根目录 `./template/` 中创建新的目录`mytest`如 `"./template/mytest"`
 1. 在 mytest 目录中创建必要子目录与文件如： 
 
 
