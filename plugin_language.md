@@ -3,8 +3,7 @@
 [安装脚本](?ac=document&page=plugin_install)|[模板和语言包](?ac=document&page=plugin_language)|[注意事项](?ac=document&page=plugin_notice)
 
 ## 插件语言包
-创建语言包 
-
+### 创建语言包 
 - 给插件创建语言包首先需要创建一个 `data/plugindata/*identifier*.lang.php` 文件，文件内容中包含 4 个数组，如下： 
 
 
@@ -49,7 +48,8 @@ $systemlang['identifier'] = array(
 
 - 然后在插件基本设置中开启语言包选项后即可。 
 
-调用语言包 模版中调用模板文件语言包，通过 `{lang *identifier*:english}` 方式调用。 
+### 调用语言包
+模版中调用模板文件语言包，通过 `{lang *identifier*:english}` 方式调用。 
 
 程序脚本中调用脚本文件语言包，通过 `lang('plugin/*identifier*', 'english')` 方式调用。 
 
@@ -57,7 +57,8 @@ $systemlang['identifier'] = array(
 
 系统语言包用于替换系统语言包中的某些语言条目。 
 
-语言包导出 创建好的语言包在插件导出后会自动导出到 `XML` 文件中，供插件作者转码后发放多编码版本的插件。如上例中导出的 `XML` 中会包含以下内容： 
+### 语言包导出
+创建好的语言包在插件导出后会自动导出到 `XML` 文件中，供插件作者转码后发放多编码版本的插件。如上例中导出的 `XML` 中会包含以下内容： 
 
 
 ```
