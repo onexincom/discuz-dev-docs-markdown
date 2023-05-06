@@ -1,9 +1,9 @@
-# Discuz! 的插件机制
+# `Discuz!` 的插件机制
 [准备工作](?ac=document&page=dev_plugin)|[插件接口](?ac=document&page=plugin_module)|[参数读取](?ac=document&page=plugin_vars)|[页面嵌入](?ac=document&page=plugin_hook)|[特殊主题](?ac=document&page=plugin_specialthread)|[第三方拓展类](?ac=document&page=plugin_classes)|[其它模块](?ac=document&page=plugin_other_module)  
 [安装脚本](?ac=document&page=plugin_install)|[模板和语言包](?ac=document&page=plugin_language)|[注意事项](?ac=document&page=plugin_notice)
 
 ## 插件嵌入点列表
-· 全局(common/) 
+· 全局`(common/)`
 
 
 ```
@@ -35,7 +35,7 @@
      string global_usernav_extra4 (X2.5)
 
 ```
-· 论坛(forum/) 
+· 论坛`(forum/)`
 
 
 ```
@@ -224,7 +224,7 @@
      array viewthread_trade_extra
 
 ```
-· 群组(group/) 
+· 群组`(group/)`
 
 
 ```
@@ -269,7 +269,7 @@
      string index_side_bottom
 
 ```
-· 家园(home/) 
+· 家园`(home/)`
 
 
 ```
@@ -380,7 +380,7 @@
      string space_wall_face_extra
 
 ```
-· 注册/登录(member/) 
+· 注册/登录`(member/)`
 
 
 ```
@@ -399,7 +399,7 @@
      string register_bottom
 
 ```
-· 门户(portal/) 
+· 门户`(portal/)`
 
 
 ```
@@ -419,7 +419,7 @@
      string view_article_side_bottom (X2.5)
 
 ```
-· 排行榜(ranklist/) 
+· 排行榜`(ranklist/)`
 
 
 ```
@@ -427,7 +427,7 @@
      string ranklist_nav_extra
 
 ```
-· 搜索(search/) 
+· 搜索`(search/)`
 
 
 ```
@@ -457,7 +457,7 @@
      string portal_bottom
 
 ```
-· 应用(userapp/) 
+· 应用`(userapp/)`
 
 
 ```
@@ -473,7 +473,7 @@
      string userapp_menu_bottom
 
 ```
-· 手机标准版(mobile/common/) 
+· 手机标准版`(mobile/common/)`
 
 
 ```
@@ -483,7 +483,7 @@
      string global_header_mobile
 
 ```
-· 手机标准版(mobile/forum/) 
+· 手机标准版`(mobile/forum/)`
 
 
 ```
@@ -502,7 +502,7 @@
      string viewthread_bottom_mobile
 
 ```
-· 手机触屏版(touch/common/) 
+· 手机触屏版`(touch/common/)`
 
 
 ```
@@ -512,7 +512,7 @@
       string global_header_mobile
 
 ```
-· 手机触屏版(touch/forum/) 
+· 手机触屏版`(touch/forum/)`
 
 
 ```
@@ -534,7 +534,7 @@
       string viewthread_bottom_mobile
 
 ```
-· 手机触屏版(touch/member/) 
+· 手机触屏版`(touch/member/)`
 
 
 ```
@@ -542,7 +542,7 @@
       string logging_bottom_mobile (X3.1)
 
 ```
-· 手机极简版(wml/forum/) 
+· 手机极简版`(wml/forum/)`
 
 
 ```
@@ -561,3 +561,4 @@
 
 ```
 更新时间：2013-9-3
+
