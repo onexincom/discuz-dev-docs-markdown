@@ -19,17 +19,17 @@
 扩展类型的应用基准目录为 `/` （根目录）   
 
 1. 压缩包中的根文件夹有且只有一个文件夹，文件夹名和插件标识（模板标识、扩展标识）相同，在此文件夹中存放应用的全部文件。简单来说，应用的打包您只需对基准目录下的您的应用目录点击鼠标右键选择压缩即可。
-1. 对于上传的插件，平台将提供自动编码转换服务。您只需在上传的压缩包中包含“简体UTF-8”或“简体GBK”版本的 `discuz_plugin_*pluginid*.xml` 文件，那么在插件审核通过并上线后，平台会自动对下载的安装包中生成以下文件：   
+1. 对于上传的插件，平台将提供自动编码转换服务。您只需在上传的压缩包中包含“简体UTF-8”或“简体GBK”版本的 `discuz_plugin_(plugin_identifer).xml` 文件，那么在插件审核通过并上线后，平台会自动对下载的安装包中生成以下文件：   
 
-    - `discuz_plugin_*pluginid*_SC_GBK.xml` (简体 GBK)
+    - `discuz_plugin_(plugin_identifer)_SC_GBK.xml` (简体 GBK)
 
-    - `discuz_plugin_*pluginid*_SC_UTF8.xml` (简体 UTF8)
+    - `discuz_plugin_(plugin_identifer)_SC_UTF8.xml` (简体 UTF8)
 
-    - `discuz_plugin_*pluginid*_TC_UTF8.xml` (繁体 UTF8)
+    - `discuz_plugin_(plugin_identifer)_TC_UTF8.xml` (繁体 UTF8)
 
-    - `discuz_plugin_*pluginid*_TC_BIG5.xml` (繁体 BIG5)
+    - `discuz_plugin_(plugin_identifer)_TC_BIG5.xml` (繁体 BIG5)
 
-如果您不希望平台为您转换编码，请不要在上传的压缩包中包含 `discuz_plugin_*pluginid*.xml` 文件，直接包含带编码后缀的 `discuz_plugin_*pluginid*_SC_GBK.xml` 文件即可。
+如果您不希望平台为您转换编码，请不要在上传的压缩包中包含 `discuz_plugin_*pluginid*.xml` 文件，直接包含带编码后缀的 `discuz_plugin_(plugin_identifer)_SC_GBK.xml` 文件即可。
 1. 扩展组件类的文件包和分支版本类的文件包结构相同，唯一区别就是禁止携带插件或风格的安装脚本 xml 文件。
 1. 下载资料类的文件包结构不限制，但不允许携带应用源码。
 
@@ -84,10 +84,12 @@ MyValue 变量返回值内容不限制。如果返回值为一个网址，表示
 
   
 格式如下： 
-```<item id="language"><![CDATA[附属语言包 PHP 脚本文件名]]></item>
+```
+<item id="language"><![CDATA[附属语言包 PHP 脚本文件名]]></item>
 ```
 友情提示：Discuz! X2.5 开始可用 currentlang() 函数获取网站 Discuz! 的语言编码，如下： 
-```$language = 'language.'.currentlang().'.php';
+```
+$language = 'language.'.currentlang().'.php';
 ```
 ## 6、范例
 如有不明白的开发者可以 [下载范例文件包](https://addon.dismall.com/resource/vartest.zip)或者 [安装“应用配置文件演示”应用](https://addon.dismall.com/?@vartest.plugin)，以了解您需要上传给开放平台的文件包结构。 
