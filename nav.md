@@ -56,6 +56,8 @@
 
 - ## 技术文档
 
+    - [`Discuz!` 资源下载](?ac=document&page=download)
+
     - [`Discuz!` 的编码规范](?ac=document&page=dev_coderule)
 
     - [`Discuz!` 的模板机制](?ac=document&page=dev_template)
