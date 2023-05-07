@@ -1,8 +1,4 @@
-
-# Discuz! 的插件机制
-[准备工作](?ac=document&page=dev_plugin)|[插件接口](?ac=document&page=plugin_module)|[参数读取](?ac=document&page=plugin_vars)|[页面嵌入](?ac=document&page=plugin_hook)|[特殊主题](?ac=document&page=plugin_specialthread)|[第三方拓展类](?ac=document&page=plugin_classes)|[其它模块](?ac=document&page=plugin_other_module)  
-[安装脚本](?ac=document&page=plugin_install)|[模板和语言包](?ac=document&page=plugin_language)|[注意事项](?ac=document&page=plugin_notice)
-
+# 第三方拓展类
 ## 目录
 1. [广告类](?ac=document&page=plugin_classes#.E5.B9.BF.E5.91.8A.E7.B1.BB)
 1. [道具类](?ac=document&page=plugin_classes#.E9.81.93.E5.85.B7.E7.B1.BB)
@@ -22,7 +18,7 @@
 缩略图：`source/plugin/(identifer)/adv/adv_name.gif`
 
 
-```
+```php
 <?php
 
 class adv_name {
@@ -77,7 +73,7 @@ class adv_name {
 图标：`source/plugin/(identifer)/magic/magic_name.small.gif、source/plugin/(identifer)/magic/magic_name.gif`
 
 
-```
+```php
 <?php
 
 class magic_name {
@@ -127,7 +123,7 @@ class magic_name {
 图标：`source/plugin/(identifer)/task/task_name.gif`
 
 
-```
+```php
 <?php
 
 class task_name {
@@ -185,7 +181,7 @@ class task_name {
 脚本位置：`source/plugin/(identifer)/secqaa/secqaa_name.php`
 
 
-```
+```php
 <?php
 
 class secqaa_name {
@@ -213,7 +209,7 @@ class secqaa_name {
 脚本位置：`source/plugin/(identifer)/seccode/seccode_name.php`
 
 
-```
+```php
 <?php
 
 class seccode_name {
@@ -240,3 +236,4 @@ class seccode_name {
 友情提示：[下载学习 Discuz! X3 范例插件](https://addon.dismall.com/resource/Discuz_X3.0_Plugin_Sample.zip)
 
 更新时间：2013-10-16
+
