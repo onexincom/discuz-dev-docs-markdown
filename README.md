@@ -3,6 +3,7 @@ The latest Discuz! X development document, written using markdown. This is unoff
 You may need to check the official documentation. https://open.dismall.com/?!document
 
 2023.5.7 大雨
+
 已完成Discuz!X开发文档中文简体版本的初步整理，其它版本将陆续发布。
 
 “路虽远，行则将至。事虽难，做则必成。”
