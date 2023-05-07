@@ -1,13 +1,10 @@
-# `Discuz!` 的插件机制
-[准备工作](?ac=document&page=dev_plugin)|[插件接口](?ac=document&page=plugin_module)|[参数读取](?ac=document&page=plugin_vars)|[页面嵌入](?ac=document&page=plugin_hook)|[特殊主题](?ac=document&page=plugin_specialthread)|[第三方拓展类](?ac=document&page=plugin_classes)|[其它模块](?ac=document&page=plugin_other_module)  
-[安装脚本](?ac=document&page=plugin_install)|[模板和语言包](?ac=document&page=plugin_language)|[注意事项](?ac=document&page=plugin_notice)
-
+# 模板和语言包
 ## 插件语言包
-### 创建语言包 
+### 创建语言包
 - 给插件创建语言包首先需要创建一个 `data/plugindata/*identifier*.lang.php` 文件，文件内容中包含 4 个数组，如下： 
 
 
-```
+```php
 <?php
 
 $scriptlang['identifier'] = array(
@@ -61,7 +58,7 @@ $systemlang['identifier'] = array(
 创建好的语言包在插件导出后会自动导出到 `XML` 文件中，供插件作者转码后发放多编码版本的插件。如上例中导出的 `XML` 中会包含以下内容： 
 
 
-```
+```xml
 <item id="language">
     <item id="scriptlang">
         <item id="english"><![CDATA[chinese]]></item>
@@ -86,17 +83,18 @@ $systemlang['identifier'] = array(
 插件的模板统一放置到 `source/plugin/*identifier*/template` 目录下，程序脚本通过以下语句调用插件模板文件，如下例，调用 `source/plugin/*identifier*/template/test`
 
 
-```
+```php
 include template('identifier:test');
 
 ```
 模版中调用插件模版通过以下方法： 
 
 
-```
+```html
 {template identifier:test}
 
 ```
 模板的编写详见[模板创建、解析原理详解](?ac=document&page=dev_template "模板创建、解析原理详解")
 
 更新时间：2013-1-28
+
