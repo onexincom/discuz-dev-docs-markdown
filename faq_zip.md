@@ -1,7 +1,4 @@
-
 # 文件包说明
-[开发者帐号](?ac=document&page=faq)|[发布应用](?ac=document&page=faq_addon)|[文件包说明](?ac=document&page=faq_zip)|[身份认证](?ac=document&page=faq_certification)|[开放接口](?ac=document&page=faq_api)|[官方QQ群](?ac=document&page=qqgroup)
-
 ## 1、版本及文件包分类
 1. **分支版本**:  
  分支版本是指您应用的多个共存版本，如“免费版”、“收费版”、“`**** GBK`”、“`**** UTF8`”、“`**** PHP≤5.2`”、“`**** PHP≥5.3`”。文件包结构请阅读下方的“3、文件包结构”。分支版本的文件包将通过站点的 `Discuz!` 管理中心在线安装。
@@ -52,7 +49,7 @@
 应用发布配置文件的文件名为 config.xml，位于压缩包中的根目录，此文件非必需。配置文件的格式如下：
 
 
-```
+```php
                 <?xml version="1.0" encoding="ISO-8859-1"?>
                 <root>
                     <item id="Title"><![CDATA[Discuz! Addon Config]]></item>
@@ -70,7 +67,7 @@
  用于扩展自定义动态变量，即 {ADDONVAR: *MyKey*} 的项目，格式如下： 
 
 
-```
+```php
                 <item id="var">
                     <item id="MyKey1"><![CDATA[MyValue1]]></item>
                     <item id="MyKey2"><![CDATA[MyValue2]]></item>
@@ -91,14 +88,15 @@
 格式如下： 
 
 
-```
+```php
 <item id="language"><![CDATA[附属语言包 PHP 脚本文件名]]></item>
 ```
 友情提示：`Discuz! X2.5` 开始可用 `currentlang()` 函数获取网站 `Discuz!` 的语言编码，如下： 
 
 
-```
+```php
 $language = 'language.'.currentlang().'.php';
 ```
 ## 6、范例
 如有不明白的开发者可以 [下载范例文件包](https://addon.dismall.com/resource/vartest.zip)或者 [安装“应用配置文件演示”应用](https://addon.dismall.com/?@vartest.plugin)，以了解您需要上传给开放平台的文件包结构。 
+
