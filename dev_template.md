@@ -1,7 +1,5 @@
-
-# `Discuz!` 的模板机制
-[模板风格创建](?ac=document&page=dev_template)|[`Discuz!`模板解析语法](?ac=document&page=template_coderule)|[模板缓存与CSS缓存](?ac=document&page=template_css)|[内置常用CSS代码分析 ](?ac=document&page=template_sample)## 目录
-
+# 模板风格创建
+### 目录
 - [1开启模板开发者模式](?ac=document&page=dev_template#.E6.A8.A1.E6.9D.BF.E5.A5.97.E7.B3.BB.E4.B8.8E.E9.A3.8E.E6.A0.BC.E5.8C.BA.E5.88.AB.DEV)
 - [2模板套系与风格区别](?ac=document&page=dev_template#.E6.A8.A1.E6.9D.BF.E5.A5.97.E7.B3.BB.E4.B8.8E.E9.A3.8E.E6.A0.BC.E5.8C.BA.E5.88.AB)
 - [3模板创建（新教程）](?ac=document&page=dev_template#.E6.89.A9.E5.B1.95.E6.A8.A1.E6.9D.BF.E5.88.9B.E5.BB.BA.NEW)
@@ -22,7 +20,7 @@
 开始设计一个新模板，请首先打开 `config/config_global.php` 文件，在文件结尾添加以下代码开启模板开发者模式。 
 
 
-```
+```php
 $_config['plugindeveloper'] = 1;
 ```
 ## 模板套系与风格区别
@@ -52,7 +50,7 @@ $_config['plugindeveloper'] = 1;
 1. 在 mytest 目录中创建必要子目录与文件如： 
 
 
-```
+```php
 ./template/mytest/common/
 ./template/mytext/common/extend_common.css
 ./template/mytext/common/extend_module.css
@@ -82,3 +80,4 @@ $_config['plugindeveloper'] = 1;
 - 自定义模板变量 - 新增：可以根据扩展需求，针对个性化的CSS进行全局的定义 
 
 更新时间：2012-5-3
+
