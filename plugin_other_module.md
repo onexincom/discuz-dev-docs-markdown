@@ -6,7 +6,7 @@
 脚本位置：`source/plugin/插件目录/cron/cron_name.php`
 
 
-```
+```php
 <?php
 
 //cronname:mycron     计划任务名称，可写脚本语言包中的项目
@@ -31,7 +31,7 @@ if(!defined('IN_DISCUZ')) {
 脚本位置：`source/plugin/插件目录/cache/cache_name.php`
 
 
-```
+```php
 <?php
 
 if(!defined('IN_DISCUZ')) {
@@ -48,3 +48,4 @@ function build_cache_plugin_name() {
 友情提示：[下载学习 `Discuz! X3` 范例插件](?ac=document&page=download)
 
 更新时间：2013-1-28
+
