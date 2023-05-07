@@ -1,9 +1,4 @@
-
-# Discuz! 的插件机制
-[准备工作](?ac=document&page=dev_plugin)|[插件接口](?ac=document&page=plugin_module)|[参数读取](?ac=document&page=plugin_vars)|[页面嵌入](?ac=document&page=plugin_hook)|[特殊主题](?ac=document&page=plugin_specialthread)|[第三方拓展类](?ac=document&page=plugin_classes)|[其它模块](?ac=document&page=plugin_other_module)  
-[安装脚本](?ac=document&page=plugin_install)|[模板和语言包](?ac=document&page=plugin_language)|[注意事项](?ac=document&page=plugin_notice)
-
-## 注意事项
+# 注意事项
 请在您动手编写插件之前，还需要仔细的阅读以下原则，遵循这些原则，将有效的避免可能发生的问题： 
 
 - 所有与插件的程序，包括其全部的前后台程序，请全部放入 `source/plugin/` 目录中，同时在插件的安装说明中指出，插件的文件需要复制到哪些目录。为了避免与其他插件冲突，请尽量建立 `source/plugin/` 下的子目录，并将插件程序放置于子目录下，这样您编写的插件将获得更好的兼容性。 
@@ -13,7 +8,8 @@
 - 所有与插件有关的程序，包括全部的前台程序，因全部使用外壳调用，请务必在第一行加入 
 
 
-```
+```php
+
 if(!defined('IN_DISCUZ')) {
     exit('Access Denied');
 }
@@ -22,7 +18,8 @@ if(!defined('IN_DISCUZ')) {
 后台程序第一行加入 
 
 
-```
+```php
+
 if(!defined('IN_DISCUZ') || !defined('IN_ADMINCP')) {
     exit('Access Denied');
 }
@@ -37,3 +34,4 @@ if(!defined('IN_DISCUZ') || !defined('IN_ADMINCP')) {
 - `Discuz!` 内置了 8 种自定义积分，存储于 `common_member` 表中的 `extcredits1` 至 `extcredits8` 字段中，类型为有符号整数。 
 
 更新时间：2012-5-3
+
