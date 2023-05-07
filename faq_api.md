@@ -1,8 +1,4 @@
-
-# 平台介绍
-[开发者帐号](?ac=document&page=faq)|[发布应用](?ac=document&page=faq_addon)|[文件包说明](?ac=document&page=faq_zip)|[身份认证](?ac=document&page=faq_certification)|[开放接口](?ac=document&page=faq_api)|[官方QQ群](?ac=document&page=qqgroup)
-
-## 开放接口
+# 开放接口
 ### 1、获取 `access_token`
 通过开放平台的用户名`（username）`和校验密钥`（key）`获得 `access_token`。 [接口说明点击这里](https://api.dismall.com/docs.php?service=App.Get.AccessToken&detail=1&type=s)。
 
