@@ -1,6 +1,6 @@
 
 # 内置常用CSS代码分析
-## **CSS多IE下兼容HACK写法**
+## **CSS IE多版本下兼容`HACK`写法**
 
 ```css
 所有 IE浏览器适用： .ie_all .foo { ... }
@@ -10,21 +10,41 @@ IE8 专用：     .ie8 .foo { ... }
 
 ```
 ## **CSS书写规范**
-1. 属性写在一行内，属性之间、属性名和值之间以及属性与“{}”之间须有空格，例如：.class { width: 400px; height: 300px; } 
-1. 属性的书写顺序： 1. 针对特殊浏览器的属性，应写在标准属性之前，例如：-webkit-box-shadow:; -moz-box-shadow:; box-shaow:; 
-1. 按照元素模型由外及内，由整体到细节书写，大致分为五组： 1. 位置：position,left,right,float 
-1. 盒模型属性：display,margin,padding,width,height 
-1. 边框与背景：border,background 
-1. 段落与文本：line-height,text-indent,font,color,text-decoration,... 
-1. 其他属性：overflow,cursor,visibility,... 
-1. 谨慎添加新的选择符规则，尤其不可滥用 id，尽可能继承和复用已有样式 
-1. 选择符、属性、值均用小写（格式的颜色值除外），缩写的选择符名称须说明缩写前的全称，例如 .cl -> Clearfix 
-1. 勿使用冗余低效的 CSS 写法，例如：ul li a span { ... } 
-1. 慎用 !important 
-1. 建议使用在 class/id 名称中的词语 1. 表示状态：a->active 
-1. 表示结构：h->header,c->content,f->footer 
-1. 表示区域：mn->main,sd->side,nv-navigation,mu->menu 
-1. 表示样式：l-list,tab,p_pop 
+\* 属性写在一行内，属性之间、属性名和值之间以及属性与 `{}` 之间须有空格，例如：`.class { width: 400px; height: 300px; }`
+
+\* 属性的书写顺序：
+
+2.1. 针对特殊浏览器的属性，应写在标准属性之前，例如：`-webkit-box-shadow:; -moz-box-shadow:; box-shaow:;`
+
+2.2. 按照元素模型由外及内，由整体到细节书写，大致分为五组：
+
+2.2.1. 位置：`position,left,right,float`
+
+2.2.2. 盒模型属性：`display,margin,padding,width,height`
+
+2.2.3. 边框与背景：`border,background`
+
+2.2.4. 段落与文本：`line-height,text-indent,font,color,text-decoration,...`
+
+2.2.5. 其他属性：`overflow,cursor,visibility,...`
+
+\* 谨慎添加新的选择符规则，尤其不可滥用 `id` ，尽可能继承和复用已有样式 
+
+\* 选择符、属性、值均用小写（格式的颜色值除外），缩写的选择符名称须说明缩写前的全称，例如 `.cl -> Clearfix`
+
+\* 勿使用冗余低效的 `CSS` 写法，例如：`ul li a span { ... }`
+
+\* 慎用 `!important`
+
+\* 建议使用在 `class/id` 名称中的词语
+
+7.1. 表示状态：`a->active`
+
+7.2. 表示结构：`h->header,c->content,f->footer`
+
+7.3. 表示区域：`mn->main,sd->side,nv-navigation,mu->menu`
+
+7.4. 表示样式：`l-list,tab,p_pop`
 
 ## **常用CSS**
 - 左浮动、右浮动 
@@ -139,3 +159,4 @@ IE8 专用：     .ie8 .foo { ... }
 
 ```
 更新时间：2012-5-3
+
