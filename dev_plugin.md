@@ -1,8 +1,4 @@
-
-# Discuz! 的插件机制
-[准备工作](?ac=document&page=dev_plugin)|[插件接口](?ac=document&page=plugin_module)|[参数读取](?ac=document&page=plugin_vars)|[页面嵌入](?ac=document&page=plugin_hook)|[特殊主题](?ac=document&page=plugin_specialthread)|[第三方拓展类](?ac=document&page=plugin_classes)|[其它模块](?ac=document&page=plugin_other_module)  
-[安装脚本](?ac=document&page=plugin_install)|[模板和语言包](?ac=document&page=plugin_language)|[注意事项](?ac=document&page=plugin_notice)
-
+# 准备工作
 ## 插件实现流程
 开始编写社区插件，您应当首先对插件实现的流程有一个大致的了解，以下是我们推荐的插件编写流程： 
 
@@ -36,3 +32,4 @@
 - [X2.5变更内容] `$_G['username']` 将不进行 `addslashes` 处理。 
 
 更新时间：2012-5-3
+
