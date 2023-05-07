@@ -1,3 +1,4 @@
+
 # 模板缓存与CSS缓存
 ## **模板缓存**
 - 模板缓存存放：所有的模板缓存均被解析成php文件存放在 `./data/template` 中，以 `**数字**_**模板标示符组合**.tpl.php` 形式保存 
@@ -9,8 +10,12 @@
 - 自建新套系模板文件可以通过创建 `./template/mytest/common/extend_common.css` 或 `extend_module.css` 进行CSS扩展 
     - 其中这两个文件的CSS样式脚本会通过 `Discuz!` 模板解析将风格常量统一赋值进去并合将CSS脚本复制出来放入 `./template/default/common/common.css` 和 `module.css` 所对应的缓存中去，方便站点运行时引用 
 
+
 - `extend_module.css` 系统解析与缓存存放： 
     - 其中可以使用下面的书写方法： 
+
+
+
 
 ```php
 /** forum::index,forum::forumdisplay **/
@@ -18,7 +23,7 @@
 /** end **/
 
 ```
-1. 上面的写法含义是：针对 `forum` 的 **`index`** 和 **`forumdisplay`** 追加一个自定义的CSS样式 "**`mycss`**" ，`Discuz!` 模板解析将会根据 `forum::index` 的关键词将 `mycss` 分别追加在 `./data/cache/style_2_forum_index.css` 和 `./data/cache/style_2_forum_forumdisplay.css` 中(里面的数字 `2` 根据新增的风格编号而定) 
+1. 上面的写法含义是：针对 `forum` 的 **`index`** 和 **`forumdisplay`** 追加一个自定义的CSS样式 **`mycss`** ，`Discuz!` 模板解析将会根据 `forum::index` 的关键词将 `mycss` 分别追加在 `./data/cache/style_2_forum_index.css` 和 `./data/cache/style_2_forum_forumdisplay.css` 中(里面的数字 `2` 根据新增的风格编号而定) 
 1. 这样的写法好处就是，不变更默认模板的情况下有效的扩展CSS，并可以很好的进行多站点移植 
 
 ## **CSS 继承规范**
@@ -32,3 +37,4 @@
 - CSS 自身的集成顺序为：当 CSS 属性名称相同是，CSS 文件中，写在后面的替换前面的代码 
 
 更新时间：2012-5-3
+
