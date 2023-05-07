@@ -117,7 +117,7 @@ PHP程序可以使用**<?php ?>**来界定 PHP 代码，在HTML页面中嵌入�
 例如： 
 
 
-```
+```php
 /**
  *      [Discuz!] (C)2001-2099 Comsenz Inc.
  *      This is NOT a freeware, use is subject to license terms
@@ -129,7 +129,7 @@ PHP程序可以使用**<?php ?>**来界定 PHP 代码，在HTML页面中嵌入�
 程序开发中难免留下一些临时代码和调试代码，此类代码必须添加注释，以免日后遗忘。所有临时性、调试性、试验性的代码，必须添加统一的注释标记"//debug"并后跟完整的注释信息，这样可以方便在程序发布和最终调试前批量检查程序中是否还存在有疑问的代码。例如： 
 
 
-```
+```php
 $num = 1;
 $flag = TRUE;   //debug 这里不能确定是否需要对$flag进行赋值
 if(empty($flag)) {
@@ -150,7 +150,7 @@ if(empty($flag)) {
 以下是符合上述规范的例子： 
 
 
-```
+```php
 if($condition) {
     switch($var) {
         case 1:     echo 'var is 1'; break;
@@ -182,7 +182,7 @@ if($condition) {
 根据上述原则，以下举例说明正确的书写格式： 
 
 
-```
+```php
 $result = (($a + 1) * 3 / 2 + $num)).'Test';
 $condition ? func1($var) : func2($var);
 $condition ? $long_statement : $another_long_statement;
@@ -206,7 +206,7 @@ showmessage('请使用 restore.php 工具恢复数据。');
 例如，符合标准的定义： 
 
 
-```
+```php
 function authcode($string, $operation, $key = '') {
     if($flag) {
         //Statement
@@ -218,7 +218,7 @@ function authcode($string, $operation, $key = '') {
 不符合标准的定义： 
 
 
-```
+```php
 function authcode($string,$operation,$key = '')
 {
     //函数体
@@ -242,7 +242,7 @@ PHP中单引号和双引号具有不同的含义，最大的几项区别如下�
 - 数据库SQL语句中，所有数据必须加单引号，无论数值还是字串，以避免可能的注入漏洞和SQL错误。正确的写法为： 
 
 
-```
+```php
 UPDATE cdb_members SET adminid='1' WHERE username='$admin' AND adminid='2';
 
 ```
@@ -279,7 +279,7 @@ UPDATE cdb_members SET adminid='1' WHERE username='$admin' AND adminid='2';
 **任何变量在进行累加、直接显示或存储前必需进行初使化**,例如： 
 
 
-```
+```php
 $number = 0;            //数值型初始化
 $string = '';       //字符串初始化
 $array = array();   //数组初始化
@@ -321,7 +321,7 @@ PHP中的变量不并不像C语言那样需要事先声明，解释器会在第�
 - 所有被包含和调用的程序文件，包括但不限于程序、缓存或模板，通常其不能被直接URL请求。`Discuz!`通过在`./source/class/class_core.php`中定义一个标记性常量`IN_DISCUZ`，来判断程序是否被合法调用。因此，在除了 `./source/class/class_core.php` 以外的任何一个被包含和调用的程序文件中，需要包含以下内容，以使得访问者无法直接通过URL请求该文件： 
 
 
-```
+```php
 if(!defined('IN_DISCUZ')) {
     exit('Access Denied');
 }
@@ -369,7 +369,7 @@ if(!defined('IN_DISCUZ')) {
 如下的语句范例，是符合规范的： 
 
 
-```
+```php
 $query = $db->query("SELECT s.*, m.* FROM {$tablepre}sessions s, {$tablepre}members m WHERE m.uid=s.uid AND s.sid='$sid');
 
 ```
@@ -407,7 +407,7 @@ $query = $db->query("SELECT s.*, m.* FROM {$tablepre}sessions s, {$tablepre}memb
 MySQL中并没有提供针对查询条件的优化功能，因此需要开发者在程序中对查询条件的先后顺序人工进行优化。例如如下的SQL语句： 
 
 
-```
+```php
 SELECT * FROM table WHERE a>'0' AND b<'1' ORDER BY c LIMIT 10;
 ```
 事实上无论`a>'0'`还是`b<'1'`哪个条件在前，得到的结果都是一样的，但查询速度就大不相同，尤其在对大表进行操作时。 开发者需要牢记这个原则：最先出现的条件，一定是过滤和排除掉更多结果的条件；第二出现的次之；以此类推。因而，表中不同字段的值的分布，对查询速度有着很大影响。而`ORDER BY`中的条件，只与索引有关，与条件顺序无关。 除了条件顺序优化以外，针对固定或相对固定的SQL查询语句，还可以通过对索引结构进行优化，进而实现相当高的查询速度。原则是：在大多数情况下，根据 `WHERE` 条件的先后顺序和 `ORDER BY` 的排序字段的先后顺序而建立的联合索引，就是与这条SQL语句匹配的最优索引结构。尽管，事实的产品中不能只考虑一条SQL语句，也不能不考虑空间占用而建立太多的索引。 同样以上面的SQL语句为例，最优的当table表的记录达到百万甚至千万级后，可以明显的看到索引优化带来的速度提升。 依据上面条件优化和索引优化的两个原则，当table表的值为如下方案时，可以得出最优的条件顺序方案： 
@@ -457,7 +457,7 @@ HTML代码标记一律采用小写字母形式，杜绝任何使用大写字母�
 在`Discuz!`的模板文件中，由于具备逻辑结构，故不考虑任何HTML本身的缩进，所有缩进均意为着逻辑上的缩进结构。缩进采用TAB方式，不使用空格作为缩进符号，仅需适当断行即可。例如：
 
 
-```
+```php
 <!--{loop $threadlist $thread}-->
     <table cellspacing="0" cellspadding="0" border="0">
     <tr><td>$thread[message]</tr></td>
@@ -493,3 +493,4 @@ HTML代码标记一律采用小写字母形式，杜绝任何使用大写字母�
 - 附件目录等敏感目录，要在程序中实现相应功能，当新建下级目录时，必须自动写入一个空的`index.htm`文件，以避免新建目录被索引的问题。 
 
 更新时间：2012-5-3
+
