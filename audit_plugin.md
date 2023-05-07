@@ -82,7 +82,7 @@
 最常见的低效率代码是在循环中执行 `SQL` 语句，如下面的代码：
 
 
-```
+```php
 foreach($data as $id) {
     C::t('#xxx#yyy')->delete_by_id($id);
 }
@@ -109,7 +109,7 @@ foreach($data as $id) {
 4.1　`include/require` 如果使用 `include/include_once/require/require_once` 动态的引入文件，必须保证路径的合法性，例如下面的代码：
 
 
-```
+```php
 $mod = $_GET['mod'];
 require_once DISCUZ_ROOT.'./source/plugin/xxx/module/'.$mod.'.php';
 
@@ -125,14 +125,14 @@ require_once DISCUZ_ROOT.'./source/plugin/xxx/module/'.$mod.'.php';
 同时，尽量不要使用类似下面手动生成 SQL 执行的代码：
 
 
-```
+```php
 DB::fetch_all("SELECT * FROM ".DB::table('mytable')." WHERE id='$id'");
 
 ```
 而是使用替换占位符：
 
 
-```
+```php
 DB::fetch_all("SELECT * FROM %t WHERE id=%d", array('mytable', $id));
 
 ```
@@ -141,7 +141,7 @@ DB::fetch_all("SELECT * FROM %t WHERE id=%d", array('mytable', $id));
 二次入库导致的 SQL 注入问题常被人忽视，如下列代码：
 
 
-```
+```php
 foreach(DB::fetch_all("SELECT name FROM ".DB::table('mytable1')) as $result) {
     DB::query("UPDATE ".DB::table('mytable2')." SET xxx=xxx+1 WHERE name='".$result['name']."'");
 }
@@ -154,7 +154,7 @@ foreach(DB::fetch_all("SELECT name FROM ".DB::table('mytable1')) as $result) {
 如下列代码存在安全隐患：
 
 
-```
+```php
 if(empty($_GET['delsubmit'])) {
     include template('xxx');
 } else {
@@ -165,14 +165,14 @@ if(empty($_GET['delsubmit'])) {
 请求来源的检测可通过调用 `submitcheck()` 或手动检测 FORMHASH，上述代码 `if(empty($_GET['delsubmit'])) {` 可改造为：
 
 
-```
+```php
 if(!submitcheck('delsubmit')) {
 
 ```
 或
 
 
-```
+```php
 if(FORMHASH != $_GET['formhash']) {
 
 ```
