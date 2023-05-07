@@ -1,12 +1,8 @@
-# `Discuz!` 的插件机制
-[准备工作](?ac=document&page=dev_plugin)|[插件接口](?ac=document&page=plugin_module)|[参数读取](?ac=document&page=plugin_vars)|[页面嵌入](?ac=document&page=plugin_hook)|[特殊主题](?ac=document&page=plugin_specialthread)|[第三方拓展类](?ac=document&page=plugin_classes)|[其它模块](?ac=document&page=plugin_other_module)  
-[安装脚本](?ac=document&page=plugin_install)|[模板和语言包](?ac=document&page=plugin_language)|[注意事项](?ac=document&page=plugin_notice)
-
-## 插件嵌入点列表
+# 插件嵌入点列表
 · 全局`(common/)`
 
 
-```
+```php
  extcredits.htm
      string spacecp_credit_extra
  faq.htm
@@ -38,7 +34,7 @@
 · 论坛`(forum/)`
 
 
-```
+```php
  collection_all.htm (X2.5)
      string collection_index_top
      string collection_index_bottom
@@ -227,7 +223,7 @@
 · 群组`(group/)`
 
 
-```
+```php
  group.htm
      string group_navlink
      string forumdisplay_navlink
@@ -272,7 +268,7 @@
 · 家园`(home/)`
 
 
-```
+```php
  editor_image_menu.htm (X3)
      string spacecp_blog_upload_extend
      string portalcp_top_upload_extend
@@ -383,7 +379,7 @@
 · 注册/登录`(member/)`
 
 
-```
+```php
  login.htm
      string logging_side_top
      string logging_top
@@ -402,7 +398,7 @@
 · 门户`(portal/)`
 
 
-```
+```php
  portalcp_article.htm
      string portalcp_top
      string portalcp_extend
@@ -422,7 +418,7 @@
 · 排行榜`(ranklist/)`
 
 
-```
+```php
  side_left.htm
      string ranklist_nav_extra
 
@@ -430,7 +426,7 @@
 · 搜索`(search/)`
 
 
-```
+```php
  album.htm
      string album_top
      string album_bottom
@@ -460,7 +456,7 @@
 · 应用`(userapp/)`
 
 
-```
+```php
  userapp_app.htm
      string userapp_app_top
      string userapp_app_bottom
@@ -476,7 +472,7 @@
 · 手机标准版`(mobile/common/)`
 
 
-```
+```php
  footer.htm
      string global_footer_mobile
  header.htm
@@ -486,7 +482,7 @@
 · 手机标准版`(mobile/forum/)`
 
 
-```
+```php
  discuz.htm
      string index_top_mobile
      string index_middle_mobile
@@ -505,7 +501,7 @@
 · 手机触屏版`(touch/common/)`
 
 
-```
+```php
  footer.htm
       string global_footer_mobile
   header.htm
@@ -515,7 +511,7 @@
 · 手机触屏版`(touch/forum/)`
 
 
-```
+```php
  discuz.htm
       string index_top_mobile
       string index_middle_mobile
@@ -537,7 +533,7 @@
 · 手机触屏版`(touch/member/)`
 
 
-```
+```php
  login.htm
       string logging_bottom_mobile (X3.1)
 
@@ -545,7 +541,7 @@
 · 手机极简版`(wml/forum/)`
 
 
-```
+```php
  discuz.htm
      string index_top_mobile
      string index_middle_mobile
