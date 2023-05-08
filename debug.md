@@ -10,11 +10,10 @@
 
 ## 所需文件：
 
-解压，将 `function_debug.php` 放到 `source/function` 目录下。
+[function_debug.zip](https://www.dismall.com/forum.php?mod=attachment&aid=MTEyfDhkMDVlNDBkfDE2ODM1MzEzMDd8MHwyMTc%3D) 解压，将 `function_debug.php` 放到 `source/function` 目录下。
 
 ## 修改配置文件：
-修改 `config\config_global.php`
-在 `$_config['remote']['cron'] = 1;` 后加入一行：
+修改 `config\config_global.php`，在 `$_config = array();` 后加入一行：
 
 ```php
 $_config['debug'] = 1;
@@ -28,4 +27,4 @@ $_config['debug'] = 'debug';
 则不是每个页面都显示 `debug` 信息只有在 `url` 后面加上 `&debug=debug` 才会显示，这就可以避免普通用户也看到 `debug` 信息了。
 
 ## `debug` 信息解释
-[function_debug.zip](https://www.dismall.com/forum.php?mod=attachment&aid=MTEyfDhkMDVlNDBkfDE2ODM1MzEzMDd8MHwyMTc%3D)
+未完待续。
