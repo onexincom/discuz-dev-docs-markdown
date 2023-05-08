@@ -8,7 +8,7 @@
  下载资料是指您可提供给站长直接下载的文件，其中不能包含应用的源码，通过资料可以向站长提供说明书、图片源文件、素材、DIY 配置、分类信息配置等文件。文件包结构不限制。下载资料的文件包站长可直接下载。
 
 ## 2、基本要求及安全规范
-请详阅 [《`Discuz!` 应用中心应用审核规范》](?ac=document&page=audit)、 [《`Discuz!` 应用中心插件审核规范》](?ac=document&page=audit_plugin)、 [《`Discuz! Lite`应用审核规范》](?ac=document&page=audit_dzl)
+请详阅 [《`Discuz!` 应用中心应用审核规范》](?ac=document&page=audit)、 [《`Discuz!` 应用中心插件审核规范》](?ac=document&page=audit_plugin)
 
 ## 3、文件包结构
 [以下内容仅限分支版本和扩展组件文件包]
