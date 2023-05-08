@@ -58,12 +58,11 @@
 
     - [`Discuz!` 资源下载](?ac=document&page=download)
 
-    - [`Discuz!` 的编码规范](?ac=document&page=dev_coderule)
-
-    - [`Discuz!` 的模板机制](?ac=document&page=dev_template)
-
-    - [`Discuz!` 的插件机制](?ac=document&page=dev_plugin)
+    - [`Discuz!` Debug 模式](?ac=document&page=debug)
 
     - [`Discuz!` 开发文档交流](https://www.dismall.com/forum-49-1.html)
 
     - [`Discuz!` 资料库](https://addon.dismall.com/library/)
+
+
+
