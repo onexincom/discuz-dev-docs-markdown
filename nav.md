@@ -1,6 +1,6 @@
 - ## `Discuz!` 应用中心
 
-    - [注册账号](?ac=document&page=faq)
+    - [成为开发者](?ac=document&page=faq)
 
     - [发布应用](?ac=document&page=faq_addon)
 
