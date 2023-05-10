@@ -1,4 +1,4 @@
-# Discuz! Debug 模式
+# `Discuz! Debug` 模式
 ## 面向对象：
 有一定 `php, mysql` 基础的站长，程序开发者
 
