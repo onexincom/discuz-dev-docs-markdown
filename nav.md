@@ -1,3 +1,4 @@
+# Discuz!X 开发手册文档
 - ## `Discuz!` 应用中心
 
     - [成为开发者](?ac=document&page=faq)
@@ -11,12 +12,6 @@
     - [开放接口](?ac=document&page=faq_api)
 
     - [官方QQ群](?ac=document&page=qqgroup)
-
-    - [《`Discuz!` 应用中心盗版认定及处理方法》](?ac=document&page=piracy)
-
-    - [《`Discuz!` 应用中心应用审核规范》](?ac=document&page=audit)
-
-    - [《`Discuz!` 应用中心插件审核规范》](?ac=document&page=audit_plugin)
 
 
 - ## `Discuz!` 的模板机制
@@ -65,4 +60,19 @@
     - [`Discuz!` 资料库](https://addon.dismall.com/library/)
 
 
+- ## 协议条款
+
+    - [《`Discuz!` 应用中心开发者服务协议》](?ac=document&page=agreement)
+
+    - [《`Discuz!` 应用中心盗版认定及处理方法》](?ac=document&page=piracy)
+
+    - [《`Discuz!` 应用中心应用审核规范》](?ac=document&page=audit)
+
+    - [《`Discuz!` 应用中心插件审核规范》](?ac=document&page=audit_plugin)
+
+
+
+**严重警告：** 违法网站请勿向 `Discuz!` 应用中心工作人员及应用开发者发起服务请求。  
+ 1、禁止使用 `Discuz!` 应用中心提供的应用从事任何非法活动。  
+ 2、非法网站请勿向我司工作人员及应用中心开发者发起任何形式的服务，在服务过程中如果发现非法内容，我司会保留相应证据，并拒绝服务。
 
