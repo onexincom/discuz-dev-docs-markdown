@@ -6,7 +6,9 @@
 可以明细的列出当前页面的查询可以具体查询出现的文件，和时间。并且有查询的 `explain` 信息。便于检查哪里出现了慢查询。 可以查看当前页面内存使用情况 可以列出当前页面 `$_G` 变量中的内容 可以列出当前页面的 `cookie` 内容 可以查看当前浏览器的信息，`User Agent` 等
 
 ## 所需文件：
-[function_debug.zip](https://www.dismall.com/forum.php?mod=attachment&aid=MTEyfDhkMDVlNDBkfDE2ODM1MzEzMDd8MHwyMTc%3D) 解压，将 `function_debug.php` 放到 `source/function` 目录下。
+将 `function_debug.php` 放到 `source/function` 目录下。
+
+下载 [`function_debug.zip`](https://www.dismall.com/forum.php?mod=attachment&aid=MTEyfDhkMDVlNDBkfDE2ODM1MzEzMDd8MHwyMTc%3D) 解压，或者在 `Git` 上 [`function_debug.php`](https://gitee.com/Discuz/DiscuzX/blob/v3.5/upload/source/function/function_debug.php) 一键复制源码。
 
 ## 修改配置文件：
 修改 `config\config_global.php`，在 `$_config = array();` 后加入一行：
@@ -28,7 +30,6 @@ $_config['debug'] = 'debug';
 ## `debug` 信息解释
 
 ```php
-
 文件版本: Discuz! X3.5 20230316
 ModID: forum::index
 包含: [文件列表] 51 in 0.054800s
