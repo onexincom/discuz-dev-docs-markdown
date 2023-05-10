@@ -1,8 +1,8 @@
-# 资源下载
+# `Discuz!` 资源下载
 ## `Discuz!` 产品下载
-`Discuz! X3.4` 是以社区为基础的专业建站平台，帮助网站实现一站式服务。
+`Discuz! X3.4,X3.5` 是以社区为基础的专业建站平台，帮助网站实现一站式服务。
 
-[下载 `Discuz!X` 的最新版本](https://www.dismall.com/thread-73-1-1.html)
+[下载 `Discuz!X` 的最新版本](https://www.dismall.com/forum-38-1.html)、[Git 下载 `Discuz!X` 的最新版本](https://gitee.com/Discuz/DiscuzX/attach_files)
 
 ## `Discuz! X3` 范例插件
 `Discuz! X3` 添加了诸多开放接口，此范例展示了增强的第三方拓展类和计划任务、缓存模块的设计方法
