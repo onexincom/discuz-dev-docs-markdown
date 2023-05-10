@@ -187,7 +187,7 @@ if(FORMHASH != $_GET['formhash']) {
 
 开发者应当明确为用户提供服务的时间（如 `7x24、5x8` 等）、时效（如 2 小时内）、方式（如 QQ、论坛等）、期限（商业用户）等。
 
-更多要求请阅读：[https://open.dismall.com/?ac=document&page=audit](https://open.dismall.com/?ac=document&page=audit)
+更多要求请阅读：[《`Discuz!` 应用中心应用审核规范》](?ac=document&page=audit)
 
 审核人员不是插件测试人员，请开发者在提交上传插件前自行完成插件的测试。插件在审核时，会随机分配给不同的审核人员。不同的审核人员有不同的习惯（如有的发现一个问题就打回，有的打回时多寻找问题），请开发者理解。
 
