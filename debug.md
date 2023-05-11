@@ -8,7 +8,7 @@
 ## 所需文件：
 将 `function_debug.php` 放到 `source/function` 目录下。
 
-在 `Git` 上一键复制 [`function_debug.php`](https://gitee.com/Discuz/DiscuzX/blob/v3.5/upload/source/function/function_debug.php) 源码，或者下载 [`function_debug.zip`](https://www.dismall.com/forum.php?mod=attachment&aid=MTEyfDhkMDVlNDBkfDE2ODM1MzEzMDd8MHwyMTc%3D) 解压。
+在 `Git` 上查看源码：[`function_debug.php`](https://gitee.com/Discuz/DiscuzX/raw/v3.5/upload/source/function/function_debug.php)
 
 ## 修改配置文件：
 修改 `config\config_global.php`，在 `$_config = array();` 后加入一行：
