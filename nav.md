@@ -1,4 +1,4 @@
-# Discuz!X 开发手册文档
+# `Discuz!X` 开发手册文档
 - ## `Discuz!` 应用中心
 
     - [成为开发者](?ac=document&page=faq)
@@ -50,6 +50,8 @@
 
 
 - ## 技术文档
+
+    - [`Discuz!` 目录索引](?ac=document&page=dir_index)
 
     - [`Discuz!` 资源下载](?ac=document&page=download)
 
